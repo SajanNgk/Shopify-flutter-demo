@@ -71,12 +71,7 @@ class CartView extends ConsumerWidget {
                                         Expanded(
                                           child: Text(
                                             "${cartList[index].title} ${cartList[index].variants!.title}",
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .subtitle1!
-                                                .copyWith(
-                                                    fontWeight:
-                                                        FontWeight.bold),
+                                           
                                             maxLines: 2,
                                             overflow: TextOverflow.ellipsis,
                                           ),
@@ -113,10 +108,7 @@ class CartView extends ConsumerWidget {
                                       children: [
                                         Text(
                                           "\$${cartList[index].variants!.price}",
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .subtitle2!
-                                              .copyWith(color: AppColor.blue),
+                                         
                                         ),
                                         Container(
                                           decoration: BoxDecoration(

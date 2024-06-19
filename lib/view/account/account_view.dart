@@ -20,28 +20,22 @@ class AccountView extends StatelessWidget {
               const SizedBox(width: 16),
               Text(
                 "Profile",
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 16),
+                
               )
             ],
           ),
           const SizedBox(height: 16),
-          Row(
+          const Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.list_alt_sharp,
                 size: 32,
                 color: AppColor.blue,
               ),
-              const SizedBox(width: 16),
+              SizedBox(width: 16),
               Text(
                 "Order",
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 16),
+               
               )
             ],
           ),
@@ -56,10 +50,7 @@ class AccountView extends StatelessWidget {
               const SizedBox(width: 16),
               Text(
                 "Address",
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 16),
+               
               )
             ],
           ),
@@ -74,10 +65,6 @@ class AccountView extends StatelessWidget {
               const SizedBox(width: 16),
               Text(
                 "Payment",
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 16),
               )
             ],
           ),

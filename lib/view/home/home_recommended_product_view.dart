@@ -52,14 +52,14 @@ class HomeRecommendedProductView extends ConsumerWidget {
                         "Recommended \nProduct",
                         style: Theme.of(context)
                             .textTheme
-                            .headline5!
+                            .displayMedium!
                             .copyWith(color: AppColor.white),
                       ),
                       const SizedBox(height: 24),
                       Text("We recommend the best for you",
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle2!
+                              .displayMedium!
                               .copyWith(
                                   color: AppColor.white,
                                   fontWeight: FontWeight.w300))

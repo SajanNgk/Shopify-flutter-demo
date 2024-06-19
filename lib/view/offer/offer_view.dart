@@ -27,7 +27,7 @@ class OfferView extends ConsumerWidget {
                       color: AppColor.blue,
                       borderRadius: BorderRadius.all(Radius.circular(4))),
                   child: Text("Use \"MEGSL\" Coupon For \nGet 90%off",
-                      style: Theme.of(context).textTheme.headline5!.copyWith(
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
                 ...list
@@ -71,7 +71,7 @@ class OfferView extends ConsumerWidget {
                                         e.title.toString(),
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline5!
+                                            .headlineMedium!
                                             .copyWith(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold),

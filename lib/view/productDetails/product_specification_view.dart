@@ -23,7 +23,7 @@ class ProductSpecificationView extends StatelessWidget {
                 "Specification",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle1!
+                    .displayMedium!
                     .copyWith(fontWeight: FontWeight.bold, fontSize: 20),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -34,7 +34,7 @@ class ProductSpecificationView extends StatelessWidget {
                 children: [
                   Text(
                     "Vendor :",
-                    style: Theme.of(context).textTheme.subtitle1!,
+                    style: Theme.of(context).textTheme.displayMedium!,
                   ),
                   Text(product.vendor!),
                 ],
@@ -45,7 +45,7 @@ class ProductSpecificationView extends StatelessWidget {
                 children: [
                   Text(
                     "Product Type :",
-                    style: Theme.of(context).textTheme.subtitle1!,
+                    style: Theme.of(context).textTheme.displayMedium!,
                   ),
                   Text(product.productType!),
                 ],
@@ -55,7 +55,7 @@ class ProductSpecificationView extends StatelessWidget {
                 children: [
                   Text(
                     "Tags :",
-                    style: Theme.of(context).textTheme.subtitle1!,
+                    style: Theme.of(context).textTheme.displayMedium!,
                   ),
                   Expanded(
                     child: Text(
@@ -71,7 +71,7 @@ class ProductSpecificationView extends StatelessWidget {
                 children: [
                   Text(
                     "Sku :",
-                    style: Theme.of(context).textTheme.subtitle1!,
+                    style: Theme.of(context).textTheme.displayMedium!,
                   ),
                   ProductVariantsSukView(variants: product.variants),
                 ],

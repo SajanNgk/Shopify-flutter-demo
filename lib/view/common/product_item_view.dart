@@ -38,7 +38,7 @@ class ProductItemView extends StatelessWidget {
               products.title!,
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .displayMedium!
                   .copyWith(fontWeight: FontWeight.w500),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
@@ -48,7 +48,7 @@ class ProductItemView extends StatelessWidget {
               "\$${double.parse(products.variants?.first.price ?? "100").toStringAsFixed(2)}",
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .displayMedium!
                   .copyWith(color: AppColor.blue),
             ),
             const SizedBox(height: 16),
@@ -58,7 +58,7 @@ class ProductItemView extends StatelessWidget {
                     "\$${(double.parse(products.variants?.first.price ?? "100") * 1.24).toStringAsFixed(2)}",
                 style: Theme.of(context)
                     .textTheme
-                    .bodyText2!
+                    .bodyMedium!
                     .copyWith(decoration: TextDecoration.lineThrough),
                 children: const <TextSpan>[
                   TextSpan(

@@ -25,7 +25,7 @@ class HomeCategoryView extends ConsumerWidget {
                 "Category",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .displaySmall!
                     .copyWith(fontSize: 16),
               ),
               InkWell(
@@ -36,7 +36,7 @@ class HomeCategoryView extends ConsumerWidget {
                   "More Category",
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .displaySmall!
                       .copyWith(fontSize: 16, color: AppColor.blue),
                 ),
               ),
@@ -96,7 +96,7 @@ class HomeCategoryItemView extends StatelessWidget {
           const SizedBox(height: 4),
           Text(
             collection.title!,
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodySmall,
             maxLines: 1,
             overflow: TextOverflow.fade,
           )

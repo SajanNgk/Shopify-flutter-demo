@@ -27,7 +27,7 @@ class HomeFlashSellView extends ConsumerWidget {
                 "Flash Sell",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .displaySmall!
                     .copyWith(fontSize: 16),
               ),
               InkWell(
@@ -41,7 +41,7 @@ class HomeFlashSellView extends ConsumerWidget {
                 },
                 child: Text(
                   "See More",
-                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                  style: Theme.of(context).textTheme.displaySmall!.copyWith(
                         fontSize: 16,
                         color: AppColor.blue,
                       ),

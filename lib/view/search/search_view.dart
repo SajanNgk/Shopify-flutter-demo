@@ -44,7 +44,7 @@ class SearchView extends ConsumerWidget {
                     "Man Fashion",
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .displayMedium!
                         .copyWith(fontSize: 16),
                   ),
                 ),
@@ -73,7 +73,7 @@ class SearchView extends ConsumerWidget {
                     "Woman Fashion",
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .displayMedium!
                         .copyWith(fontSize: 16),
                   ),
                 ),

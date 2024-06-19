@@ -22,7 +22,7 @@ class ProductSizeSelectionView extends ConsumerWidget {
           child: Text(
             "Select Size",
             style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 20),
+                Theme.of(context).textTheme.displayMedium!.copyWith(fontSize: 20),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
@@ -54,7 +54,7 @@ class ProductSizeSelectionView extends ConsumerWidget {
                   variants![index].title!,
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .displayMedium!
                       .copyWith( fontSize: 16),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,

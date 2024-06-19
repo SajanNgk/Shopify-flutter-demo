@@ -4,18 +4,25 @@ import 'package:shopify/core/app_colors.dart';
 class ThemeController {
   static ThemeData lightTheme() {
     final ThemeData base = ThemeData.light();
+    Color textColor = Colors.black;
 
     TextTheme buildTextThemeLight(TextTheme base) {
       return base.copyWith(
-        headline1: base.headline1!.copyWith(),
-        headline5: base.headline5!
-            .copyWith(fontWeight: FontWeight.bold, color: AppColor.black),
-        subtitle1: base.subtitle1!.copyWith(color: AppColor.black),
-        subtitle2: base.subtitle2!
-            .copyWith(color: AppColor.black, fontWeight: FontWeight.w700),
-        bodyText1: base.bodyText1!.copyWith(color: AppColor.blackLight),
-        bodyText2: base.bodyText2!.copyWith(color: AppColor.blackLight),
-        caption: base.caption!.copyWith(color: AppColor.blackLight),
+        headlineSmall: base.headlineSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+       headlineMedium: base.headlineSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+        titleSmall: base.titleSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+        titleMedium: base.titleMedium
+            ?.copyWith(fontWeight: FontWeight.w700, color: textColor),
+
+        bodySmall: base.bodySmall
+            ?.copyWith( color: textColor),
+             bodyMedium: base.bodyMedium
+            ?.copyWith(fontWeight: FontWeight.w700, color: textColor),
+       displayMedium: base.displayMedium
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
       );
     }
 
@@ -24,11 +31,11 @@ class ThemeController {
         indicatorColor: Colors.white,
         dividerColor: AppColor.lightDivider,
         scaffoldBackgroundColor: AppColor.whiteLightest,
-        errorColor: AppColor.lightError,
+        cardColor: AppColor.lightError,
         appBarTheme: base.appBarTheme.copyWith(
             color: AppColor.whiteLightest,
             elevation: 0,
-            titleTextStyle: base.textTheme.subtitle1!
+            titleTextStyle: base.textTheme.titleSmall!
                 .copyWith(fontWeight: FontWeight.bold, fontSize: 20),
             iconTheme: const IconThemeData(color: AppColor.black)),
         textSelectionTheme:
@@ -91,18 +98,25 @@ class ThemeController {
 
   static ThemeData darkTheme() {
     final ThemeData base = ThemeData.dark();
+       Color textColor = Colors.black;
 
     TextTheme buildTextThemeDark(TextTheme base) {
       return base.copyWith(
-        headline1: base.headline1!.copyWith(),
-        headline5: base.headline5!.copyWith(fontWeight: FontWeight.bold),
-        headline6: base.headline6!.copyWith(fontWeight: FontWeight.w700),
-        subtitle1: base.subtitle1!.copyWith(color: AppColor.white),
-        subtitle2: base.subtitle2!
-            .copyWith(color: AppColor.white, fontWeight: FontWeight.w700),
-        bodyText1: base.bodyText1!.copyWith(color: AppColor.whiteLight),
-        bodyText2: base.bodyText2!.copyWith(color: AppColor.whiteLight),
-        caption: base.caption!.copyWith(color: AppColor.whiteLight),
+         headlineSmall: base.headlineSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+       headlineMedium: base.headlineSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+        titleSmall: base.titleSmall
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
+        titleMedium: base.titleMedium
+            ?.copyWith(fontWeight: FontWeight.w700, color: textColor),
+
+        bodySmall: base.bodySmall
+            ?.copyWith( color: textColor),
+             bodyMedium: base.bodyMedium
+            ?.copyWith(fontWeight: FontWeight.w700, color: textColor),
+       displayMedium: base.displayMedium
+            ?.copyWith(fontWeight: FontWeight.bold, color: textColor),
       );
     }
 

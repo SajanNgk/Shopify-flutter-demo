@@ -34,7 +34,7 @@ class CommonButton extends StatelessWidget {
           children: [
             Text(
               label,
-              style: Theme.of(context).textTheme.subtitle1!.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   color: Theme.of(context).colorScheme.baseColor,
                   fontWeight: fontWeight),
             ),

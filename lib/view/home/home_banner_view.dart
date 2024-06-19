@@ -90,7 +90,7 @@ class HomeBannerItemView extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16, bottom: 16),
                 child: Text(
                   collection.title.toString(),
-                  style: Theme.of(context).textTheme.headline5!.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),

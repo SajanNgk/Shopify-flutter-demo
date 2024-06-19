@@ -21,7 +21,7 @@ class ProductYouMightLikeView extends ConsumerWidget {
           child: Text(
             "You Might Also Like",
             style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 20),
+                Theme.of(context).textTheme.displayMedium!.copyWith(fontSize: 20),
           ),
         ),
         SizedBox(

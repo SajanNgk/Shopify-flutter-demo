@@ -27,7 +27,7 @@ class HomeMegaSellView extends ConsumerWidget {
                 "Mega Sell",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .displayMedium!
                     .copyWith(fontSize: 16),
               ),
               InkWell(
@@ -43,7 +43,7 @@ class HomeMegaSellView extends ConsumerWidget {
                   "See More",
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .displayMedium!
                       .copyWith(fontSize: 16, color: AppColor.blue),
                 ),
               ),

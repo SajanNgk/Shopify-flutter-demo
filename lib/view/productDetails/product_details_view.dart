@@ -51,7 +51,7 @@ class ProductDetailsView extends ConsumerWidget {
                         product.title!,
                         style: Theme.of(context)
                             .textTheme
-                            .headline5!
+                            .headlineMedium!
                             .copyWith(fontWeight: FontWeight.w600),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
@@ -189,7 +189,7 @@ class ProductPriceView extends ConsumerWidget {
         "\$${variants![selectedVariant].price!}",
         style: Theme.of(context)
             .textTheme
-            .headline6!
+            .headlineMedium!
             .copyWith(color: AppColor.blue, fontWeight: FontWeight.w900),
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
